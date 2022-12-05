@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 500ms;
+}
+
+body {
+    margin: 0;
+    padding: 0 10px 10px 10px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nav {
+    padding: 0px 5px 0px 5px;
+    background-color: rgba(237, 237, 237, 0.689);
+    margin: 0 15px 0 15px;
+}
+
+.nav h1 {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+}
+
+.header-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.img-header {
+    margin: 15px;
+}
+
+#section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 5px 5px 20px 5px;
+}
+
+.img {
+    width: 350px;
+}
+
+.btn-all {
+    cursor: pointer;
+    background-color: rgb(0, 68, 255);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.btn-all:hover {
+    background-color: white;
+    color: rgb(0, 68, 255);
+    box-shadow: 0px 0px 3px 0px rgb(0, 68, 255);
+}
+
+@media (max-width: 1100px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 732px) {
+    .img {
+        width: 100%;
+    } 
+}
+
+.footer {
+    border-top: 1px solid gray;
+    margin-top: 30px;
+}
+
+/* Button Modal*/	
+.btn-modal {
+    padding: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-modal:hover {
+    background-color: white;
+    color: green;
+    box-shadow: 0px 0px 3px 0px green;
+}
+
+.btn-close {
+    padding: 10px;
+    background-color: tomato;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: 2s;
+}
+
+.btn-close:hover {
+    filter: saturate(8);
+}
+
+/* Modal */	
+dialog {
+    width: 70%;
+}
+
+dialog::backdrop {
+    background-color: rgb(255, 255, 255);
+}	
